@@ -1,2 +1,8 @@
-language: java
-script: mvn CPS-847_Ass2/src/CalculatorTests
+language: csharp
+solution: CPS847Ass2/CPS847Ass2.sln
+install:
+  - nuget restore CPS847Ass2.sln
+  - nuget install NUnit.Console -Version 3.9.0 -OutputDirectory testrunner
+script:
+  - msbuild /p:Configuration=Release CPS847Ass2.sln
+  - mono ./testrunner/NUnit.ConsoleRunner.3.9.0/tools/nunit3-console.exe ./MyProject.Tests/bin/Release/MyProject.Tests.dll
