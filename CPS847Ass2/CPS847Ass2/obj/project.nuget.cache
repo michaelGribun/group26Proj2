@@ -1,8 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "tkxInVy0AthtUpaKvg413az/vgMwY4kTLzBm/2eQD/WhDIoshsQD3ji29Q8VZDIl/yZC7qez9oq8zyVaSsRpEg==",
+  "dgSpecHash": "8xHAYt8Jfy2XUSC37LK/PG9ha5XTp8e5iW1FnD2CXMbMTmqORUTOw/PaDlbk0etQUfVW6/q+2lwJpJfYN0potA==",
   "success": true,
   "projectFilePath": "C:\\Users\\micha\\source\\repos\\CPS847Ass2\\CPS847Ass2\\CPS847Ass2.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\micha\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\3.0.1\\microsoft.aspnetcore.app.ref.3.0.1.nupkg.sha512",
+    "C:\\Users\\micha\\.nuget\\packages\\microsoft.netcore.app.ref\\3.0.0\\microsoft.netcore.app.ref.3.0.0.nupkg.sha512",
+    "C:\\Users\\micha\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\3.0.3\\microsoft.netcore.app.host.win-x64.3.0.3.nupkg.sha512",
+    "C:\\Users\\micha\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\3.0.0\\microsoft.windowsdesktop.app.ref.3.0.0.nupkg.sha512"
+  ],
   "logs": []
 }
