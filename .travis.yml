@@ -4,6 +4,8 @@ mono: none
 dotnet: 3.0
 os:
 - linux
+install:
+- choco install codecov
 before_script:
 - dotnet restore ".\CPS847Ass2\CPS847Ass2.sln"
 script:
