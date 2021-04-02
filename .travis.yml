@@ -10,4 +10,4 @@ script:
 - dotnet build ".\CPS847Ass2\CPS847Ass2.sln" -c Release
 - dotnet test ".\CPS847Ass2\CPS847Ass2.sln" -c Release -v n -l "trx;LogFileName=.\TestOutput.xml"
 after_script:
-- bash <(curl -s https://codecov.io/bash)
+- bash <(curl -s https://codecov.io/bash) -t 0e9a0e65-3fd7-4925-9d31-65af1f7f6a9f
