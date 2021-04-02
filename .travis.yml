@@ -4,10 +4,10 @@ mono: none
 dotnet: 3.0
 os:
 - linux
-install:
-- choco install codecov
 before_script:
 - dotnet restore ".\CPS847Ass2\CPS847Ass2.sln"
 script:
 - dotnet build ".\CPS847Ass2\CPS847Ass2.sln" -c Release
 - dotnet test ".\CPS847Ass2\CPS847Ass2.sln" -c Release -v n
+after_script:
+- bash <(curl -s https://codecov.io/bash)
