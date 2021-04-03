@@ -5,8 +5,9 @@ dotnet: 3.0
 os:
 - linux
 before_script:
+- nugget install Codecov -Version 1.13.0 -OutputDirectory .\
 - dotnet restore ".\CPS847Ass2\CPS847Ass2.sln"
 script:
 - dotnet build ".\CPS847Ass2\CPS847Ass2.sln" -c Release
 - dotnet test ".\CPS847Ass2\CPS847Ass2.sln" -c Release -v n -l "trx;LogFileName=.\MyProject_coverage.xml"
-- bash <(curl -f .\MyProject_coverage.xml -s https://codecov.io/bash)
+- codecov -f .\MyProject_coverage.xml
