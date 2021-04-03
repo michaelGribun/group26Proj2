@@ -4,8 +4,9 @@ mono: none
 dotnet: 3.0
 os:
 - linux
-before_script:
+install:
 - nuget install Codecov -Version 1.13.0 -OutputDirectory .\
+before_script:
 - dotnet restore ".\CPS847Ass2\CPS847Ass2.sln"
 script:
 - dotnet build ".\CPS847Ass2\CPS847Ass2.sln" -c Release
