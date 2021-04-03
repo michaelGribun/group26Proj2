@@ -9,4 +9,4 @@ before_script:
 script:
 - dotnet build ".\CPS847Ass2\CPS847Ass2.sln" -c Release
 - dotnet test ".\CPS847Ass2\CPS847Ass2.sln" -c Release -v n -l "trx;LogFileName=.\MyProject_coverage.xml"
-- bash <(curl -s https://codecov.io/bash)
+- bash <(curl -f .\MyProject_coverage.xml -s https://codecov.io/bash)
