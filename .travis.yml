@@ -8,5 +8,5 @@ before_script:
 - dotnet restore ".\CPS847Ass2\CPS847Ass2.sln"
 script:
 - dotnet build ".\CPS847Ass2\CPS847Ass2.sln" -c Release
-- dotnet test ".\CPS847Ass2\CPS847Ass2.sln" -c Release -v n -l "trx;LogFileName=.\TestOutput.xml"
+- dotnet test ".\CPS847Ass2\CPS847Ass2.sln" -c Release -v n -l "trx;LogFileName=.\MyProject_coverage.xml"
 - bash <(curl -s https://codecov.io/bash)
