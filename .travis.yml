@@ -5,7 +5,7 @@ dotnet: 3.0
 os:
 - linux
 before_script:
-- nugget install Codecov -Version 1.13.0 -OutputDirectory .\
+- nuget install Codecov -Version 1.13.0 -OutputDirectory .\
 - dotnet restore ".\CPS847Ass2\CPS847Ass2.sln"
 script:
 - dotnet build ".\CPS847Ass2\CPS847Ass2.sln" -c Release
